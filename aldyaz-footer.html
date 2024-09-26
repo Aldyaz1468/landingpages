@@ -9,6 +9,7 @@
         p {
             margin: 0%;
         }
+
         span {
             font-size: large;
         }
@@ -28,13 +29,15 @@
         }
 
         .aldyaz-up img {
-            width: 75px;
-            height: 50px;
+            width: 100px;
+            height: 75px;
+            margin: 20px;
         }
 
         .aldyaz-center {
             display: flex;
             align-items: center;
+            justify-content: space-around;
         }
 
         .a-pkiri {
@@ -77,6 +80,36 @@
             align-items: center;
             margin-bottom: 10px;
         }
+
+        .a-rp {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .a-atas {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            border-bottom: solid 1px black;
+            height: 85px;
+        }
+
+        .a-tup {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+
+        .a-bawah {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .a-tdown {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
     </style>
 </head>
 
@@ -116,15 +149,49 @@
             <div class="a-rp">
                 <span>Recent Posts</span>
                 <div class="a-atas">
-                    <p><b>A companion for extra sleeping</b></p>
-                    <p><b>sleeping</b></p>
-                    <p>July 23, 2016 1 Comment</p>
+                    <div class="a-gup">
+                        <img src="gup.jpg" alt="">
+                    </div>
+                    <div class="a-tup">
+                        <p><b>A companion for extra sleeping</b></p>
+                        <p><b>sleeping</b></p>
+                        <p>July 23, 2016 1 Comment</p>
+                    </div>
                 </div>
                 <div class="a-bawah">
-                    <p><b> Outdor seating</b></p>
-                    <p><b>collection inspiration</b></p>
-                    <p>July 23, 2016 1 Comment</p>
+                    <div class="a-gdown">
+                        <img src="gdown.jpg" alt="">
+                    </div>
+                    <div class="a-tdown">
+                        <p><b> Outdor seating</b></p>
+                        <p><b>collection inspiration</b></p>
+                        <p>July 23, 2016 1 Comment</p>
+                    </div>
                 </div>
+            </div>
+            <div class="a-os">
+                <p>New York</p>
+                <p>London SF</p>
+                <p>Edinburgh</p>
+                <p>Los Angeles</p>
+                <p>Chicago</p>
+                <p>Las Vegas</p>
+            </div>
+            <div class="a-os">
+                <p>Privacy Policy</p>
+                <p>Returns</p>
+                <p>Terms & Conditions</p>
+                <p>Contact Us</p>
+                <p>Latest News</p>
+                <p>Our Sitemap</p>
+            </div>
+            <div class="a-fm">
+                <p>Instagram profile</p>
+                <p>New Collection</p>
+                <p>Woman Dress</p>
+                <p>Contact Us</p>
+                <p>Latest News</p>
+                <p>Purchase Theme</p>
             </div>
         </div>
     </div>
