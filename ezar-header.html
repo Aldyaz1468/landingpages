@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KedaiKayu</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+           box-sizing: border-box;
+           margin: 0;
+           padding: 0;
+        }
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aliceblue;
+        }
+        .container{
+            width: 1680px;
+            
+           
+        }
+
+        .home{   
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .home-isi{   
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            width: 95%;
+        }
+        .home #background{
+            z-index: -1;
+            height: 100%;
+            
+        }
+
+        .nav{
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-decoration: none;
+            margin-top: 40px;
+            height: 120px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(255, 255, 255);
+            font-size: 1.2rem;
+            padding: 40px;
+            box-shadow: 2px 2px 12px rgb(185, 190, 182);
+
+        }
+
+        .menu-home, .menu-shop, .menu-blog, .menu-pages, .menu-element{
+            margin-right: -10px;
+        }
+
+        #logo{
+            width: 237px;
+            height: 100%;
+            box-sizing: content-box;
+            display: flex;
+            margin-right: 35px;
+        }
+
+        .box, .box1{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+        
+        .box a, .box1 a{
+            position: relative;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.653);
+            font-weight: 600;
+        }
+
+        .box a:hover{
+            color: #83b735;
+            transition: ease-in-out 0.3s;
+        }
+        
+        .box1 :hover{
+            color: rgba(0, 0, 0, 0.453);
+            transition: ease-in-out 0.3s;
+        }
+
+        .header{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            position: absolute;
+            left: 0;
+            top: 320px;
+        }
+
+        .header h1{
+            font-size: 85px;
+            width: 800px;
+            color: #114639;
+        }
+
+        .header p{
+            font-size: 24px;
+            width: 810px;
+            color: rgba(0, 0, 0, 0.527);
+        }
+        
+        .button-header{
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .button-header-1{
+            width: 160px;
+            height: 53px;
+            background-color: #83b735;
+            font-size: 16px;
+            font-weight: 450;
+            color: white;
+            border: solid 0px rgba(0, 0, 0, 0.479);
+        }
+
+        .button-header-1:hover{
+            background-color: #6c962d;
+            transition: 0.3s;
+        }
+        
+        .button-header-2{
+            width: 160px;
+            height: 53px;
+            color: rgba(0, 0, 0, 0.700);
+            font-size: 16px;
+            font-weight: 450;
+            background-color: transparent;
+            border: solid 2.6px rgba(0, 0, 0, 0.222);
+            padding: 8px;
+        }
+
+        .button-header-2:hover{
+            background-color: rgba(0, 0, 0, 0.222);
+            transition: 0.3s;
+        }
+        
+        .button-header-2 ::after{
+            border: solid 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="home">
+            <img src="https://woodmart.b-cdn.net/wp-content/uploads/2021/02/wd-coffee-slide-1.jpg" id="background">
+            <div class="home-isi">
+                <div class="nav">
+                    <div class="box">
+                        <img src="https://woodmart.b-cdn.net/wp-content/themes/woodmart/images/wood-logo-dark.svg" id="logo">
+                        <div class="menu-home">
+                            <a href="#">HOME</a>
+                            <i class='bx bx-chevron-down' style='color:rgba(0,0,0,0.35)'  ></i>
+                        </div>
+                        <div class="menu-shop">
+                            <a href="#">SHOP</a>
+                            <i class='bx bx-chevron-down' style='color:rgba(0,0,0,0.35)'  ></i>
+                        </div>
+                        <div class="menu-blog">
+                            <a href="#">BLOG</a>
+                            <i class='bx bx-chevron-down' style='color:rgba(0,0,0,0.35)'  ></i>
+                        </div>
+                        <div class="menu-pages">
+                            <a href="#">PAGES</a>
+                            <i class='bx bx-chevron-down' style='color:rgba(0,0,0,0.35)'  ></i>
+                        </div>
+                        <div class="menu-element">
+                            <a href="#">ELEMENT</a>
+                            <i class='bx bx-chevron-down' style='color:rgba(0,0,0,0.35)'  ></i>
+                        </div>
+                        <a href="#">BUY</a>
+                    </div>
+                    <div class="box1">
+                        <a href="#">LOGIN/REGISTER</a>
+                        <i class='bx bx-heart'></i>
+                        <i class='bx bx-shuffle'></i>
+                        <i class='bx bx-cart'></i>
+                    </div>
+                </div>
+                <div class="header">
+                    <h1>Start your day with a good cup off coffee</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem similique enim fuga. 
+                        Eligendi, id laboriosam temporibus ab totam, sit doloremque unde inventore ipsum officiis 
+                        assumenda veritatis, cumque nesciunt voluptas saepe?</p>
+                    <div class="button-header">
+                        <button class="button-header-1">READ MORE</button>
+                        <button class="button-header-2">VIEW MORE</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
