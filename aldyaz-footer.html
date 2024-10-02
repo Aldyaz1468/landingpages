@@ -9,14 +9,14 @@
         p {
             margin: 0%;
         }
+
         span {
             font-size: large;
         }
 
         .aldyaz-container {
-            width: 1680px;
-            margin-left: auto;
-            margin-right: auto;
+            width: 100%;
+            margin: auto;
         }
 
         .aldyaz-up {
@@ -28,13 +28,20 @@
         }
 
         .aldyaz-up img {
-            width: 75px;
-            height: 50px;
+            width: 125px;
+            height: 75px;
+            margin: 20px;
         }
 
         .aldyaz-center {
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
             display: flex;
             align-items: center;
+            gap: 20px;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
 
         .a-pkiri {
@@ -46,6 +53,7 @@
         .a-logo {
             width: 200px;
             height: 50px;
+            margin-bottom: 20px;
         }
 
         .a-info {
@@ -62,20 +70,73 @@
         .located {
             display: flex;
             align-items: center;
-            margin-bottom: 10px;
-            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-top: 20px;
         }
 
         .phone {
             display: flex;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .fax {
             display: flex;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .a-rp {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .a-atas {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            border-bottom: solid 1px black;
+            height: 85px;
+        }
+
+        .a-tup {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+
+        .a-bawah {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .a-tdown {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+
+        .aldyaz-down {
+            display: flex;
+            align-items: center;
+            border-top: solid 2px black;
+            margin-top: 20px;
+            padding-top: 20px;
+            gap: 10%;
+        }
+
+        .a-kiwo {
+            margin-left: 20%;
+        }
+
+        .a-tengen {
+            margin-right: 20%;
+        }
+        .a-ckiri {
+            margin-left: 50px;
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
         }
     </style>
 </head>
@@ -116,15 +177,68 @@
             <div class="a-rp">
                 <span>Recent Posts</span>
                 <div class="a-atas">
-                    <p><b>A companion for extra sleeping</b></p>
-                    <p><b>sleeping</b></p>
-                    <p>July 23, 2016 1 Comment</p>
+                    <div class="a-gup">
+                        <img src="gup.jpg" alt="">
+                    </div>
+                    <div class="a-tup">
+                        <p><b>A companion for extra sleeping</b></p>
+                        <p><b>sleeping</b></p>
+                        <p>July 23, 2016 1 Comment</p>
+                    </div>
                 </div>
                 <div class="a-bawah">
-                    <p><b> Outdor seating</b></p>
-                    <p><b>collection inspiration</b></p>
-                    <p>July 23, 2016 1 Comment</p>
+                    <div class="a-gdown">
+                        <img src="gdown.jpg" alt="">
+                    </div>
+                    <div class="a-tdown">
+                        <p><b> Outdor seating</b></p>
+                        <p><b>collection inspiration</b></p>
+                        <p>July 23, 2016 1 Comment</p>
+                    </div>
                 </div>
+            </div>
+            <div class="a-ckiri">
+                <div class="a-os">
+                    <span class="a-jos">Our Stores</span>
+                    <div class="a-tos">
+                        <p>New York</p>
+                        <p>London SF</p>
+                        <p>Edinburgh</p>
+                        <p>Los Angeles</p>
+                        <p>Chicago</p>
+                        <p>Las Vegas</p>
+                    </div>
+                </div>
+                <div class="a-ul">
+                    <span class="a-jul">Useful Links</span>
+                    <div class="a-tul">
+                        <p>Privacy Policy</p>
+                        <p>Returns</p>
+                        <p>Terms & Conditions</p>
+                        <p>Contact Us</p>
+                        <p>Latest News</p>
+                        <p>Our Sitemap</p>
+                    </div>
+                </div>
+                <div class="a-fm">
+                    <span class="a-jfm">Footer Menu</span>
+                    <div class="a-tfm">
+                        <p>Instagram profile</p>
+                        <p>New Collection</p>
+                        <p>Woman Dress</p>
+                        <p>Contact Us</p>
+                        <p>Latest News</p>
+                        <p>Purchase Theme</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aldyaz-down">
+            <div class="a-kiwo">
+                <p><b>WOODMART<b> © 2024 CREATED BY X<b>TEMOS STUDIO</b>. PREMIUM E-COMMERCE SOLUTIONS.</p>
+            </div>
+            <div class="a-tengen">
+                <img src="payments.png" alt="">
             </div>
         </div>
     </div>
