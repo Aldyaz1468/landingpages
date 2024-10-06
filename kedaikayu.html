@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Selamat datang di sebuah coffee shop dengan suasana alami. Terletak di tengah hutan hijau dan di dekat aliran sungai jernih, tempat ini adalah pelarian sempurna dari hiruk-pikuk kota. Begitu memasuki ruangan, Anda akan disambut oleh aroma kopi segar yang menggoda dan suara gemericik air dari sungai di dekatnya.">
+    <meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodmart</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+           box-sizing: border-box;
+           margin: 0;
+           padding: 0;
+        }
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            width: 1280px;
+        }
+        .container{
+            width: 1280px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+           
+        }
+        /* Section-Header */
+        .home{   
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .home-isi{   
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            width: 78.5%;
+        }
+        .home #background{
+            z-index: -1;
+            height: 100%;
+            
+        }
+
+        .nav{
+            position: sticky;
+            top: 0;
+            left: 0;
+            text-decoration: none;
+            margin-top: 40px;
+            height: 89px;
+            width: 78.5%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(255, 255, 255);
+            font-size: 0.9rem;
+            padding: 40px;
+            box-shadow: 2px 2px 12px  rgb(185, 190, 182);
+
+        }
+
+        .menu-home, .menu-shop, .menu-blog, .menu-pages, .menu-element i{
+            margin-left: 0;
+        }
+
+        #logo{
+            width: 187px;
+            height: 100%;
+            box-sizing: content-box;
+            display: flex;
+            margin-right: 35px;
+        }
+
+        .box, .box1{
+            display: flex;
+
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .box a, .box1 a{
+            position: relative;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.653);
+            font-weight: 600;
+        }
+
+        .box a:hover{
+            color: #83b735;
+            transition: ease-in-out 0.3s;
+        }
+        
+        .box1 :hover{
+            color: rgba(0, 0, 0, 0.453);
+            transition: ease-in-out 0.3s;
+        }
+
+        .header{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            position: absolute;
+            left: 160px;
+            top: 250px;
+        }
+
+        .header h1{
+            font-size: 60px;
+            width: 600px;
+            color: #114639;
+        }
+
+        .header p{
+            font-size: 19px;
+            width: 605px;
+            color: rgba(0, 0, 0, 0.527);
+        }
+        
+        .button-header{
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .button-header-1{
+            width: 120px;
+            height: 45px;
+            background-color: #83b735;
+            font-size: 13px;
+            font-weight: 450;
+            color: white;
+            border: solid 0px rgba(0, 0, 0, 0.479);
+        }
+
+        .button-header-1:hover{
+            background-color: #6c962d;
+            transition: 0.3s;
+        }
+        
+        .button-header-2{
+            width: 120px;
+            height: 45px;
+            color: rgba(0, 0, 0, 0.801);
+            font-size: 13px;
+            font-weight: 450;
+            background-color: transparent;
+            border: solid 2.6px rgba(0, 0, 0, 0.222);
+            padding: 8px;
+            transition: 0.3s;
+        }
+
+        .button-header-2:hover{
+            background-color: rgba(0, 0, 0, 0.222);
+            border: none;
+        }
+        
+        .button-header-2 ::after{
+            border: solid 0px;
+        }
+
+        /* section-perfect */
+
+        .container-perfect-jare {
+            width: 1280px;
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        .parent img{
+            
+            margin-left: -280px;
+        }
+        .child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+            gap: 40px;
+        }
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .text h2 {
+            font-family: "Poppins", Arial, Helvetica, sans-serif;
+            color: #114639;
+            font-size: 46px;
+        }
+        .text p {
+            font-family: "Lato", Arial, Helvetica, sans-serif;
+            color: #767676;
+            font-size: 12px;
+        }
+        .btn1 {
+            background-color: #83b735;
+            width: 120px;
+            height: 45px;
+            border: 0px;
+            color: #fff;
+            padding: 10px 15px;
+        }
+        .btn2 {
+            border: 1px solid black;
+            width: 120px;
+            height: 45px;
+            padding: 10px 15px;
+            margin-left: 5px;
+            background-color: rgba(255, 255, 255, 0);
+            border: solid 2.6px rgba(0, 0, 0, 0.222);
+        }
+
+        .btn1:hover{
+            background-color: #6c962d;
+            transition: 0.3s;
+        }
+
+        .btn2:hover{
+            background-color: rgba(0, 0, 0, 0.222);
+            border: none;
+            transition: 0.3s;
+        }
+
+        /* Section-Article */
+
+        .container-ezar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            gap: 20px;
+            
+        }
+
+        .container-ezar h3{
+            font-size: 38px;
+            color: #114639;
+        }
+
+        .container-ezar #bwh-h3{
+            color: rgba(0, 0, 0, 0.418);
+        }
+
+        .card {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card-ezar{
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 380px;
+            height: 372px;
+            box-shadow: -1px -1px 2px 1px rgb(228, 224, 224);
+        }
+        
+        .card-ezar:hover{
+            
+        }
+        
+        .card-ezar:hover #bg-ezar{
+            transition: ease-in-out 0.3s;
+            scale: 103%;
+            filter: brightness(50%);
+        }
+        
+        #bg-ezar{
+            width: 400px;
+            height: 426px;
+            z-index: -1;
+            filter: brightness(98%);
+        }
+
+        .isi-card-ezar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 20px;
+            gap: 50px;
+            color: white;
+        }
+
+
+        .tgl-ezar{
+            width: 53px;
+            height: 55px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            background-color: white;
+            color: rgba(0, 0, 0, 0.74);
+            font-size: 12px;
+            top: 10px;
+            left: 10px;
+            box-shadow: -1px 0px 1px 1px rgb(238, 230, 230);
+            
+        }
+
+
+        #angka-ezar{
+            font-size: 26px;
+        }
+        
+        .bwh-tgl-ezar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            
+        }
+
+        .bwh-tgl-ezar h6{
+            background-color: #83b735;
+            height: 23px;
+            width: 189px;
+            font-size: 12px;
+            padding-left: 7px;
+            padding-top: 5px;
+        }
+
+        .bwh-tgl-ezar p{
+            text-align: center;
+            width: 220px;
+            font-weight: 530;
+            font-size: 25px;
+        }
+
+        .pp-card-ezar{
+            display: flex;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.747);
+            gap: 10px;
+        }
+
+        .pp-card-ezar span{
+        }
+        
+        .pp-card-ezar img{
+            width: 25px;
+            border-radius: 50%;
+        }
+
+        /* Section-footer */
+        p {
+            margin: 0%;
+        }
+
+        .aldyaz-container span {
+            font-size: large;
+        }
+
+        .aldyaz-container {
+            width: 100%;
+            margin: auto;
+        }
+
+        .aldyaz-up {
+            background-color: rgba(0, 0, 0, 0.082);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .aldyaz-up img {
+            width: 125px;
+            height: 75px;
+            margin: 20px;
+        }
+
+        .aldyaz-center {
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .a-pkiri {
+            display: flex;
+            flex-direction: column;
+            margin-right: 25px;
+        }
+
+        .a-logo {
+            width: 200px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .a-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .a-info img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .located {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .phone {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .fax {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .a-rp {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .a-atas {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            border-bottom: solid 1px black;
+            height: 85px;
+        }
+
+        .a-tup {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+
+        .a-bawah {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .a-tdown {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+
+        .aldyaz-down {
+            display: flex;
+            align-items: center;
+            border-top: solid 2px black;
+            margin-top: 20px;
+            padding-top: 20px;
+            gap: 10%;
+        }
+
+        .a-kiwo {
+            margin-left: 20%;
+        }
+
+        .a-tengen {
+            margin-right: 20%;
+        }
+        .a-ckiri {
+            margin-left: 50px;
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="home">
+            <div class="home-bg">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2021/02/wd-coffee-slide-1.jpg" id="background">
+            </div>
+            <div class="home-isi">
+                <div class="nav">
+                    <div class="box">
+                        <img src="https://woodmart.b-cdn.net/wp-content/themes/woodmart/images/wood-logo-dark.svg" id="logo" >
+                        <div class="menu-home">
+                            <a href="#">HOME</a>
+                            <i class='bx bx-chevron-down' style='color:rgba(0,0,0,0.35)'  ></i>
+                        </div>
+                        <div class="menu-shop">
+                            <a href="#">SHOP</a>
+                            <i class='bx bx-chevron-down' style='color:rgba(0,0,0,0.35)'  ></i>
+                        </div>
+                        <div class="menu-blog">
+                            <a href="#">BLOG</a>
+                            <i class='bx bx-chevron-down' style='color:rgba(0,0,0,0.35)'  ></i>
+                        </div>
+                        <div class="menu-pages">
+                            <a href="#">PAGES</a>
+                            <i class='bx bx-chevron-down' style='color:rgba(0,0,0,0.35)'  ></i>
+                        </div>
+                        <div class="menu-element">
+                            <a href="#">ELEMENT</a>
+                            <i class='bx bx-chevron-down' style='color:rgba(0,0,0,0.35)'  ></i>
+                        </div>
+                        <a href="#">BUY</a>
+                    </div>
+                    <div class="box1">
+                        <a href="#">LOGIN/REGISTER</a>
+                        <i class='bx bx-heart' ></i>
+                        <i class='bx bx-shuffle'></i>
+                        <i class='bx bx-cart'></i>
+                    </div>
+                </div>
+                <div class="header">
+                    <h1>Start your day with a good cup off coffee</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem similique enim fuga. 
+                        Eligendi, id laboriosam temporibus ab totam, sit doloremque unde inventore ipsum officiis 
+                        assumenda veritatis, cumque nesciunt voluptas saepe?</p>
+                    <div class="button-header">
+                        <button class="button-header-1">READ MORE</button>
+                        <button class="button-header-2">VIEW MORE</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <!-- Section-perfect -->
+        <div class="container-perfect-jare">
+            <div class="parent">
+                <img loading="lazy" decoding="async" width="1040" height="580" src="https://woodmart.b-cdn.net/wp-content/uploads/2020/12/w-coffee-parallax-scroll-2-opt.jpg" alt="" srcset="https://woodmart.b-cdn.net/wp-content/uploads/2020/12/w-coffee-parallax-scroll-2-opt.jpg 1040w, https://woodmart.b-cdn.net/wp-content/uploads/2020/12/w-coffee-parallax-scroll-2-opt-400x223.jpg 400w, https://woodmart.b-cdn.net/wp-content/uploads/2020/12/w-coffee-parallax-scroll-2-opt-150x84.jpg 150w, https://woodmart.b-cdn.net/wp-content/uploads/2020/12/w-coffee-parallax-scroll-2-opt-768x428.jpg 768w, https://woodmart.b-cdn.net/wp-content/uploads/2020/12/w-coffee-parallax-scroll-2-opt-290x162.jpg 290w, https://woodmart.b-cdn.net/wp-content/uploads/2020/12/w-coffee-parallax-scroll-2-opt-100x56.jpg 100w, https://woodmart.b-cdn.net/wp-content/uploads/2020/12/w-coffee-parallax-scroll-2-opt-860x480.jpg 860w, https://woodmart.b-cdn.net/wp-content/uploads/2020/12/w-coffee-parallax-scroll-2-opt-430x240.jpg 430w, https://woodmart.b-cdn.net/wp-content/uploads/2020/12/w-coffee-parallax-scroll-2-opt-700x390.jpg 700w, https://woodmart.b-cdn.net/wp-content/uploads/2020/12/w-coffee-parallax-scroll-2-opt-130x73.jpg 130w" sizes="(max-width: 1040px) 100vw, 1040px">
+            </div>
+            <div class="child">
+                <img decoding="async" class="vc_single_image-img " src="https://woodmart.xtemos.com/wp-content/uploads/2020/12/w-coffee-svg-2.svg" width="80" height="80" alt="w-coffee-svg-2" title="w-coffee-svg-2" loading="lazy">
+                <div class="text">
+                    <h2>Choose for your perfect coffee roast</h2>
+                    <p>Anyway, you still use Lorem Ipsum and rightly so, 
+                       as it will the always have a place in web workers toolbox,
+                       as happen checkpoints always things, not the way.
+                    </p>
+                </div>
+                <div class="btn">
+                    <button class="btn1">READ MORE</button>
+                    <button class="btn2">VIEW MORE</button>
+                </div>
+            </div>
+        </div>
+        <!-- Section-article -->
+        <div class="container-ezar">
+            <h3>Our Articles</h3>
+            <span id="bwh-h3">It's content strategy gone awry right from the start.</span>
+            <div class="card">
+                <div class="card-ezar">
+                    <img src="article-kopi-1.webp" id="bg-ezar">
+                    <div class="tgl-ezar">
+                        <span id="angka-ezar">23</span>
+                        <span>JUL</span>
+                    </div>
+                    <div class="isi-card-ezar">
+                        <div class="bwh-tgl-ezar">
+                            <h6>DESIGN TRENDS, HAND MADE</h6>
+                            <p>Green interior design inspiration</p>
+                            <div class="pp-card-ezar">
+                                <span>Posted by</span>
+                                <img src="pp.jpg" alt="">
+                                <span>S.Rogers</span>
+                                <i class='bx bx-chat bx-flip-horizontal' ></i>
+                                <i class='bx bx-share-alt'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-ezar">
+                    <img src="article-kopi-2.jpg" id="bg-ezar">
+                    <div class="tgl-ezar">
+                        <span id="angka-ezar">23</span>
+                        <span>JUL</span>
+                    </div>
+                    <div class="isi-card-ezar">
+                        <div class="bwh-tgl-ezar">
+                            <h6>DESIGN TRENDS, HAND MADE</h6>
+                            <p>Green interior design inspiration</p>
+                            <div class="pp-card-ezar">
+                                <span>Posted by</span>
+                                <img src="pp.jpg" alt="">
+                                <span>S.Rogers</span>
+                                <i class='bx bx-chat bx-flip-horizontal' ></i>
+                                <i class='bx bx-share-alt'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-ezar">
+                    <img src="article-kopi-3.jpg" id="bg-ezar">
+                    <div class="tgl-ezar">
+                        <span id="angka-ezar">23</span>
+                        <span>JUL</span>
+                    </div>
+                    <div class="isi-card-ezar">
+                        <div class="bwh-tgl-ezar">
+                            <h6>DESIGN TRENDS, HAND MADE</h6>
+                            <p>Green interior design inspiration</p>
+                            <div class="pp-card-ezar">
+                                <span>Posted by</span>
+                                <img src="pp.jpg" alt="">
+                                <span>S.Rogers</span>
+                                <i class='bx bx-chat bx-flip-horizontal' ></i>
+                                <i class='bx bx-share-alt'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section-Footer     -->
+        <div class="aldyaz-container">
+            <div class="aldyaz-up">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/brand-witra.png" alt="">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/brand-Rosenthal.png" alt="">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/brand-PackIt.png" alt="">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2017/01/nichemodern.png" alt="">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/brand-Magisso.png" alt="">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2016/09/brand-Louis-Poulsen.png.webp" alt="">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2017/01/klobe2r.png" alt="">
+            </div>
+            <div class="aldyaz-center">
+                <div class="a-pkiri">
+                    <img class="a-logo"
+                        src="https://woodmart.b-cdn.net/wp-content/themes/woodmart/images/wood-logo-dark.svg" alt="">
+                    <p>Condimentum adipiscing vel neque dis nam</p>
+                    <p>parturient orci at scelerisque neque dis nam</p>
+                    <p>parturient.</p>
+                    <div class="a-info">
+                        <div class="located">
+                            <img src="located.png" alt="">
+                            <p>451 Wall Street, UK, London</p>
+                        </div>
+                        <div class="phone">
+                            <img src="phone.png" alt="">
+                            <p>Phone: (064) 332-1233</p>
+                        </div>
+                        <div class="fax">
+                            <img src="email.png" alt="">
+                            <p>Fax: (099) 453-1357</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="a-rp">
+                    <span>Recent Posts</span>
+                    <div class="a-atas">
+                        <div class="a-gup">
+                            <img src="gup.jpg" alt="">
+                        </div>
+                        <div class="a-tup">
+                            <p><b>A companion for extra sleeping</b></p>
+                            <p><b>sleeping</b></p>
+                            <p>July 23, 2016 1 Comment</p>
+                        </div>
+                    </div>
+                    <div class="a-bawah">
+                        <div class="a-gdown">
+                            <img src="gdown.jpg" alt="">
+                        </div>
+                        <div class="a-tdown">
+                            <p><b> Outdor seating</b></p>
+                            <p><b>collection inspiration</b></p>
+                            <p>July 23, 2016 1 Comment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="a-ckiri">
+                    <div class="a-os">
+                        <span class="a-jos">Our Stores</span>
+                        <div class="a-tos">
+                            <p>New York</p>
+                            <p>London SF</p>
+                            <p>Edinburgh</p>
+                            <p>Los Angeles</p>
+                            <p>Chicago</p>
+                            <p>Las Vegas</p>
+                        </div>
+                    </div>
+                    <div class="a-ul">
+                        <span class="a-jul">Useful Links</span>
+                        <div class="a-tul">
+                            <p>Privacy Policy</p>
+                            <p>Returns</p>
+                            <p>Terms & Conditions</p>
+                            <p>Contact Us</p>
+                            <p>Latest News</p>
+                            <p>Our Sitemap</p>
+                        </div>
+                    </div>
+                    <div class="a-fm">
+                        <span class="a-jfm">Footer Menu</span>
+                        <div class="a-tfm">
+                            <p>Instagram profile</p>
+                            <p>New Collection</p>
+                            <p>Woman Dress</p>
+                            <p>Contact Us</p>
+                            <p>Latest News</p>
+                            <p>Purchase Theme</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aldyaz-down">
+                <div class="a-kiwo">
+                    <p><b>WOODMART<b> © 2024 CREATED BY X<b>TEMOS STUDIO</b>. PREMIUM E-COMMERCE SOLUTIONS.</p>
+                </div>
+                <div class="a-tengen">
+                    <img src="payments.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
