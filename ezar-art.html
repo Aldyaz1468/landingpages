@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 1280px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-ezar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            gap: 20px;
+            
+        }
+
+        .container-ezar h3{
+            font-size: 38px;
+            color: #114639;
+        }
+
+        .container-ezar #bwh-h3{
+            color: rgba(0, 0, 0, 0.418);
+        }
+
+        .card {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card-ezar{
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+            height: 426px;
+            box-shadow: -1px -1px 2px 1px rgb(228, 224, 224);
+        }
+        
+        .card-ezar:hover{
+            
+        }
+        
+        .card-ezar:hover #bg-ezar{
+            transition: ease-in-out 0.3s;
+            scale: 103%;
+            filter: brightness(50%);
+        }
+        
+        #bg-ezar{
+            width: 400px;
+            height: 426px;
+            z-index: -1;
+            filter: brightness(98%);
+        }
+
+        .isi-card-ezar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 20px;
+            gap: 50px;
+            color: white;
+        }
+
+
+        .tgl-ezar{
+            width: 53px;
+            height: 55px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            background-color: white;
+            color: rgba(0, 0, 0, 0.74);
+            font-size: 12px;
+            top: 10px;
+            left: 10px;
+            box-shadow: -1px 0px 1px 1px rgb(238, 230, 230);
+            
+        }
+
+
+        #angka-ezar{
+            font-size: 26px;
+        }
+        
+        .bwh-tgl-ezar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            
+        }
+
+        .bwh-tgl-ezar h6{
+            background-color: #83b735;
+            height: 20px;
+            width: 184px;
+            font-size: 12px;
+            padding-left: 7px;
+            padding-top: 7px;
+        }
+
+        .bwh-tgl-ezar p{
+            text-align: center;
+            width: 220px;
+            font-weight: 530;
+            font-size: 25px;
+        }
+
+        .pp-card-ezar{
+            display: flex;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.747);
+            gap: 10px;
+        }
+
+        .pp-card-ezar span{
+        }
+        
+        .pp-card-ezar img{
+            width: 25px;
+            border-radius: 50%;
+        }
+        
+        
+        /* h6{
+            top: 300px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container-ezar">
+        <h3>Our Articles</h3>
+        <span id="bwh-h3">It's content strategy gone awry right from the start.</span>
+        <div class="card">
+            <div class="card-ezar">
+                <img src="article-kopi-1.webp" id="bg-ezar">
+                <div class="tgl-ezar">
+                    <span id="angka-ezar">23</span>
+                    <span>JUL</span>
+                </div>
+                <div class="isi-card-ezar">
+                    <div class="bwh-tgl-ezar">
+                        <h6>DESIGN TRENDS, HAND MADE</h6>
+                        <p>Green interior design inspiration</p>
+                        <div class="pp-card-ezar">
+                            <span>Posted by</span>
+                            <img src="pp.jpg" alt="">
+                            <span>S.Rogers</span>
+                            <i class='bx bx-chat bx-flip-horizontal' ></i>
+                            <i class='bx bx-share-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-ezar">
+                <img src="article-kopi-2.jpg" id="bg-ezar">
+                <div class="tgl-ezar">
+                    <span id="angka-ezar">23</span>
+                    <span>JUL</span>
+                </div>
+                <div class="isi-card-ezar">
+                    <div class="bwh-tgl-ezar">
+                        <h6>DESIGN TRENDS, HAND MADE</h6>
+                        <p>Green interior design inspiration</p>
+                        <div class="pp-card-ezar">
+                            <span>Posted by</span>
+                            <img src="pp.jpg" alt="">
+                            <span>S.Rogers</span>
+                            <i class='bx bx-chat bx-flip-horizontal' ></i>
+                            <i class='bx bx-share-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-ezar">
+                <img src="article-kopi-3.jpg" id="bg-ezar">
+                <div class="tgl-ezar">
+                    <span id="angka-ezar">23</span>
+                    <span>JUL</span>
+                </div>
+                <div class="isi-card-ezar">
+                    <div class="bwh-tgl-ezar">
+                        <h6>DESIGN TRENDS, HAND MADE</h6>
+                        <p>Green interior design inspiration</p>
+                        <div class="pp-card-ezar">
+                            <span>Posted by</span>
+                            <img src="pp.jpg" alt="">
+                            <span>S.Rogers</span>
+                            <i class='bx bx-chat bx-flip-horizontal' ></i>
+                            <i class='bx bx-share-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
